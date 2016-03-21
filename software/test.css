@@ -1,0 +1,56 @@
+body {
+	background-image: url("background.jpeg");
+	background-size: 100% 175%
+}
+
+h1 {
+	color: navy;
+	text-align: center;
+	font-family: "Times New Roman", Times, serif;
+}
+
+p {
+	font-size: 130%;
+}
+
+#intro {
+	/*background-color: black;*/
+}
+
+.first {
+	font-size: 200%;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: gray;
+}
+
+li {
+	float: left;
+	color: white;
+}
+
+li a {
+	color: black;
+	display: block;
+	float: left;
+	text-align: center;
+	padding: 14px 16 px;
+	text-decoration: none;
+}
+
+li a:hover{
+	color: rgb(255,0,0);
+}
+
+#intro .first {
+	color: red;
+}
+
+#intro .first em{
+	color: green;
+}

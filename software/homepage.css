@@ -16,8 +16,11 @@ ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	width: 100px;
+	overflow: hidden;
 	background-color: #dddddd;
+}
+
+li {
 	float: left;
 }
 
@@ -39,10 +42,10 @@ li a {
 li a:hover {
 	background-color: #555;
 	color: orange;
-	width: 20 px;
+	width: 200 px;
 }
 
-.active {
+a:active {
 	background-color: #4CAF50;
 	color: white;
 }
