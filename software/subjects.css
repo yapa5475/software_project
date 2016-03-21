@@ -1,0 +1,49 @@
+
+body{
+	background-image: url("newbackground.jpg");
+	background-color: #cccccc;
+	background-size: cover;
+}
+
+h1 {
+	color: white;
+}
+
+h2 {
+	color: gray;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 100px;
+	background-color: #dddddd;
+	float: left;
+}
+
+a {
+	color: white;
+}
+
+li a {
+	float: left;
+	display: block;
+	width: 20 px;
+	padding: 8px 0 8px 20px;
+	text-decoration: none;
+	text-align: center;
+	color: black;
+	background-color: #dddddd;
+}
+
+li a:hover {
+	background-color: #555;
+	color: orange;
+	width: 20 px;
+}
+
+.active {
+	background-color: #4CAF50;
+	color: white;
+}
