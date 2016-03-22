@@ -1,6 +1,5 @@
-body{
+body {
 	background-image: url("newbackground.jpg");
-	background-color: #cccccc;
 	background-size: cover;
 }
 
@@ -12,6 +11,10 @@ h2 {
 	color: gray;
 }
 
+h3 {
+	color: yellow;
+}
+
 ul {
 	list-style-type: none;
 	margin: 0;
@@ -20,13 +23,6 @@ ul {
 	background-color: #dddddd;
 }
 
-li {
-	float: left;
-}
-
-a {
-	color: white;
-}
 
 li a {
 	float: left;
