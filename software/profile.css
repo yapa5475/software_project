@@ -39,7 +39,7 @@ li a {
 li a:hover {
 	background-color: #555;
 	color: orange;
-	width: 20 px;
+	width: 200 px;
 }
 
 .active {
