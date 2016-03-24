@@ -1,15 +1,15 @@
 body{
-	background-image: url("newbackground.jpg");
+	background-image: url("3rd background.jpg");
 	background-color: #cccccc;
 	background-size: cover;
 }
 
 h1 {
-	color: white;
+	color: yellow;
 }
 
 h2 {
-	color: gray;
+	color: black;
 }
 
 ul {
