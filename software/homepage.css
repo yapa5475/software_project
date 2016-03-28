@@ -7,7 +7,7 @@ body{
 	width: 100%;
 	display:-webkit-box;
 	-webkit-box-pack: center;
-	background-image: url("updated background.jpg");
+	background-image: url("updatedbackground.jpg");
 	background-color: #cccccc;
 	background-size: cover;
 }
