@@ -1,10 +1,17 @@
 body {
-	background-image: url("newbackground.jpg");
+	background-image: url("updatedbackground.jpg");
 	background-size: cover;
 }
 
 h1 {
-	color: white;
+	color: yellow;
+	text-align: center;
+	font-size: 50px;
+	font-style: italic;
+	font-family: "monotype corsiva", arial, serif;
+	font-weight: bold;
+	line-height: 0;
+	padding: 20px;
 }
 
 h2 {
