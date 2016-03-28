@@ -1,74 +1,76 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
 body{
+	width: 100%;
+	display:-webkit-box;
+	-webkit-box-pack: center;
 	background-image: url("updated background.jpg");
 	background-color: #cccccc;
 	background-size: cover;
 }
 
+#entire{
+	max-width: 10000px;
+	margin: 20 px 0px;
+	display:-webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-box-flexx: 1;
+}
+
+.quote{
+	text-align: left;
+	width: 100%;
+}
+
+.tutor{
+       text-align: right;
+       font-size: 30px;
+       font-style: italic;
+}
+       
+
 h1 {
 	color: yellow;
-}
-
-h2 {
-	color: black;
-}
-
-h1 {
-     font-size: 50px;
-}
-
-h2 {
-     font-size: 30px;
-}
-
-h1 {
-       font-family: "monotype corsiva", arial, serif;
+	text-align: center;
+	font-size: 50px;
+	font-style: italic;
+	font-family: "monotype corsiva", arial, serif;
+	font-weight: bold;
+	line-height: 0;
+	padding: 20px;
 }
 
 h2 {
      font-family: "times new roman", serif;
-} 
- 
-h1 {
-     font-style: italic;
-}
-
-h2 {
      font-style: normal;
-}
-
-h1 {
-     font-weight: bold;
-}
-
-h2 {
+     font-size: 30px;
+     color: black;
      font-weight: light;
-}
-
-h2 {
- font-variant: small-caps;
-}
-
-h1 {
+     font-variant: small-caps;
      text-align: center;
+     line-height: 0.5px;
+     padding: 5px;
+} 
+
+p {
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: light
 }
 
-h2 {
-     text-align: center;
+.sub {
+    font-size: 20px;
+
 }
 
-h1 {
-     line-height: 0.1;
-}
-
-h2 {
-     line-height: 1.5;
-}
-
-
-     
-
-
-     
+div.img:logoLT.jpg {
+    width: 100%;
+    height: auto;
+}     
 
 ul {
 	list-style-type: none;
