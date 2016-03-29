@@ -1,7 +1,23 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
 body{
+	width: 100%;
+	display:-webkit-box;
+	-webkit-box-pack: center;
 	background-image: url("updatedbackground.jpg");
 	background-color: #cccccc;
 	background-size: cover;
+}
+
+#entire{
+	max-width: 10000px;
+	margin: 20 px 0px;
+	display:-webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-box-flexx: 1;
 }
 
 h1 {
@@ -62,5 +78,10 @@ li a:hover {
 
 .active {
 	background-color: #4CAF50;
+	color: white;
+}
+
+.active2 {
+	background-color: purple;
 	color: white;
 }

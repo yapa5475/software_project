@@ -1,3 +1,8 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
 body {
 	background-image: url("updatedbackground.jpg");
 	background-size: cover;
@@ -65,3 +70,7 @@ a {
 	color: white;
 }
 
+.active2 {
+	background-color: purple;
+	color: white;
+}

@@ -1,5 +1,10 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
 body {
-	background-image: url("newbackground.jpg");
+	background-image: url("updatedbackground.jpg");
 	background-size: cover;
 }
 
@@ -50,5 +55,10 @@ li a:hover {
 
 .active {
 	background-color: #4CAF50;
+	color: white;
+}
+
+.active2 {
+	background-color: purple;
 	color: white;
 }
