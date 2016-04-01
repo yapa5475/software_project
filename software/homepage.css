@@ -30,6 +30,17 @@ body{
        font-size: 30px;
        font-style: italic;
 }
+
+.boxed {
+    width: 550px;
+    padding: 75px;
+    border: 5px #003300;
+    margin: 100px;
+    background-image: url("images.jpeg");
+    position: absolute;
+    left: 455px;
+    top: 115px;
+}
        
 
 h1 {
