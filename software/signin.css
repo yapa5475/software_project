@@ -26,12 +26,13 @@ h2 {
 }
 
 h3 {
-	color: yellow;
+	color: black;
 	text-align: left;
 	font-size: 20px;
 	font-weight: bold;
-	line-height: 0.5;
+	line-height: 1.1;
 	padding: 15px;
+	
 }
 
 h4 {
