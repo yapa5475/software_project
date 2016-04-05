@@ -34,14 +34,14 @@ body{
        font-style: italic;
 }
 .boxed {
-    width: 550px;
+    width: 650px;
     padding: 75px;
-    border: 5px solid blue;
+    border: 5px solid #a7caeb;
     margin: 100px;
     background-image: url("");
     position: absolute;
-    left: 435px;
-    top: 265px;
+    left: 500px;
+    top: 150px;
 }
 }     
 
@@ -137,4 +137,3 @@ li a:hover {
 .active {
 	background-color: #4CAF50;
 	color: white;
-}
