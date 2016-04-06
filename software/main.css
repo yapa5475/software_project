@@ -1,1 +1,212 @@
-csss
+*{
+	margin: 0px;
+	padding: 0px;
+	width: 99.8%;
+}
+
+body{
+	text-align: center; 
+	width: 100%;
+	display:-webkit-box;
+	-webkit-box-pack: center;
+	
+	background-size: cover;	
+}
+
+#entire_layout{
+	width: 100%;
+	text-align: left;
+	display:-webkit-box;
+	margin-left: auto;
+	margin-right: 0px;
+	-webkit-box-orient: vertical;
+	-webkit-box-flex: 1;
+}
+
+header, section, footer, aside, nav, article, hgroup{
+	display: block;
+}
+
+#top_menu{
+	display:-webkit-box;
+	color: red;
+	width: 100%;
+	background-color: #cccccc;		
+}
+
+h1 {
+	color: yellow;
+	text-align: center;
+	font-size: 50px;
+	font-style: italic;
+	font-family: "monotype corsiva", arial, serif;
+	font-weight: bold;
+	line-height: 0;
+	padding: 20px;
+}
+
+h2 {
+     font-family: "times new roman", serif;
+     font-style: normal;
+     font-size: 30px;
+     color: black;
+     font-weight: light;
+     font-variant: small-caps;
+     text-align: center;
+     line-height: 0.5px;
+     padding: 5px;
+} 
+
+
+
+
+
+#top_menu li{	
+	float: left;
+	display: inline-block;
+	list-style: none;	
+}
+
+.left_button{
+	float: left;
+	font-size: 20px;	
+}
+
+.right_button{
+	font-size: 20px;
+}
+
+#main_section:{
+	display:-webkit-box;
+	float: left;
+	width:300px; /* no idea whats going on */
+	margin: 40px;
+}
+
+h3{
+	font-size: 25px;
+}
+
+#paragraph {
+	float: left;
+	width: 700px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	margin-left: 150px;
+	margin-right:150px;
+    color: brown;
+    font-size: 20px;
+    font-weight: light;
+    text-align: center;
+    background-color: yellow;
+}
+
+#subject_head{
+	color: black;
+	margin-bottom: 10px;
+}
+
+.subject{
+	color: brown;
+}
+
+#top_row{}
+
+#second_row{}
+
+#third_row{}
+
+
+#math_section{
+	float: left;
+	width: 500px;
+	color: red;
+	font-size: 20px;
+	margin-left: 20px;
+	margin-right: 10px;
+	margin-bottom: 30px;
+	background-color: blue;	
+}
+
+#chemistry_section{
+	float: left;
+	width: 500px;
+	color: blue;
+	font-size: 20px;
+	margin-bottom: 30px;
+	margin-left: 20px;
+	margin-right: 20px;
+	background-color: red;	
+}
+
+#physics_section{
+	float: left;
+	width: 500px;
+	color: green;
+	font-size: 20px;
+	margin-bottom: 30px;
+	margin-right: 20px;
+	margin-left: 10px;
+	background-color: blue;	
+}
+
+hr{
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+#socialstudies_section{
+	margin-left: 20px;
+	margin-right: 10px;	
+	margin-bottom: 30px;
+	float: left;
+	width: 300px;
+	color: green;
+	font-size: 20px;
+	background-color: blue;	
+}
+
+#biology_section{
+	float: left;
+	width: 300px;
+	color: green;
+	font-size: 20px;
+	margin-bottom: 50px;
+	background-color: red;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#business_section{
+	float: left;
+	width: 300px;
+	color: green;
+	font-size: 20px;
+	margin-bottom: 30px;
+	margin-right: 20px;
+	margin-left: 10px;
+	background-color: blue;	
+}
+
+#anthropology_section{
+	margin-left: 20px;
+	margin-right: 10px;
+	float: left;
+	width: 300px;
+	color: green;
+	font-size: 20px;
+	margin-bottom: 30px;
+	background-color: #cccccc;
+}
+
+#literature_section{
+	margin-left: 10px;
+	margin-right: 10px;
+	float: left;
+	width: 300px;
+	color: green;
+	font-size: 20px;
+	margin-bottom: 30px;
+	background-color: red;
+}
+
