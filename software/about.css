@@ -4,7 +4,8 @@
 }
 
 body {
-	background-image: url("updatedbackground.jpg");
+	background-image: url("newbackground.jpg");
+	background-color: black;
 	background-size: cover;
 }
 
@@ -20,11 +21,31 @@ h1 {
 }
 
 h2 {
-	color: yellow;
+	color: orange;
+	line-height: 35px;
+	
 }
 
 h3 {
+	color: yellow;
+	text-align: left;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 1.1;
+	padding: 15px;
+	
+}
+
+h4 {
 	color: white;
+	text-align: left;
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 0.5;
+	margin-top: 0px;
+	margin-bottom: 15px;
+	margin-left: 15px;
+	 
 }
 
 ul {
@@ -58,7 +79,97 @@ li a:hover {
 	color: white;
 }
 
+td {
+	color: white;
+}
+
+a {
+	color: white;
+}
+.circle { 
+	width: 160px; 
+	height: 70px; 
+	background: white;
+	-moz-border-radius: 500px;
+	-webkit-border-radius: 500px;
+    border-radius: 50px;
+    text-align: center; 
+    font-weight: bold;
+} 
+.circle1 { 
+	width: 160px; 
+	height: 30px; 
+	background: white;
+	-moz-border-radius: 500px;
+	-webkit-border-radius: 500px;
+    border-radius: 50px;
+    text-align: center; 
+    font-weight: bold;
+}
+.circle2 { 
+	width: 160px; 
+	height: 30px; 
+	background: white;
+	-moz-border-radius: 500px;
+	-webkit-border-radius: 500px;
+    border-radius: 50px;
+    text-align: center; 
+    font-weight: bold;
+}
+
 .active2 {
 	background-color: purple;
 	color: white;
+}
+
+.boxed {
+	width: 250px;
+	padding: 15px;
+    border: 5px solid #a7caeb;
+    margin: 100px;
+    background-image: url("");
+    position: absolute;
+    left: -50px;
+    top: 2px;
+	
+}
+.boxed1 {
+	width: 450px;
+	padding: 15px;
+    border: 5px solid #a7caeb;
+    margin: 100px;
+    background-image: url("");
+    position: absolute;
+    left: 400px;
+    top: 150px;
+	
+}
+.boxed2 {
+	width: 200px;
+	padding: 15px;
+    border: 5px solid #a7caeb;
+    margin: 100px;
+    background-image: url("");
+    position: absolute;
+    left: 1100px;
+    top: 10px;
+	
+}
+.review {
+	
+	position: absolute;
+	left: 20px;
+	top: 650px;
+	
+	}
+.comments {
+	text-align: center;
+	
+}
+.picture {
+
+}
+
+title {
+	color: black;
 }
