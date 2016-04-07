@@ -22,6 +22,7 @@ error-registrationformwithoutlastname.png shows the error given when there is no
 Registrationformwithoutemail.png shows the form without the email
 errormessagenoemail.png shows the error message thrown when no email is in the form.
 
+All of these image files are provided on the gitHub page.
 
 
 User Acceptance Tests
