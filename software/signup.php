@@ -17,54 +17,62 @@
 
 	</ul>
 	
-	<form action="demo.php" method="post">
+	<form action="demo.php" method="post"/>
 			<table width="450px">
 				<tr>
 					<td>
-						<label for="username">Username</label>
+						<label for="Username">Username</label>
 					</td>
 					<td>
-						<input type="text" name="username" maxlength="50" size="20">
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<label for="password">Password</label>
-					</td>
-					<td>
-						<input type="text" name="password" maxlength="50" size="20">
+						<input type="text" name="Username" maxlength="50" size="20">
 					</td>
 				</tr>
 				<tr>
 					<td>
-						<label for="first_name">First Name</label>
+						<label for="Password">Password</label>
 					</td>
 					<td>
-						<input type="text" name="first_name" maxlength="50" size="20">
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<label for="last_name">Last Name</label>
-					</td>
-					<td>
-						<input type="text" name="last_name" maxlength="50" size="20">
+						<input type="text" name="Password" maxlength="50" size="20">
 					</td>
 				</tr>
 				<tr>
 					<td>
-						<label for="email">Email</label>
+						<label for="Confirmpassword">Confirm Password</label>
 					</td>
 					<td>
-						<input type="text" name="email" maxlength="80" size="20">
+						<input type="text" name="Confirmpassword" maxlength="50" size="20">
 					</td>
 				</tr>
 				<tr>
 					<td>
-						<label for="phoneno">Cell</label>
+						<label for="First_name">First Name</label>
 					</td>
 					<td>
-						<input type="text" name="phoneno" maxlength="30" size="20">
+						<input type="text" name="First_name" maxlength="50" size="20">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="Last_name">Last Name</label>
+					</td>
+					<td>
+						<input type="text" name="Last_name" maxlength="50" size="20">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="Email">Email</label>
+					</td>
+					<td>
+						<input type="text" name="Email" maxlength="80" size="20">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="Phoneno">Cell</label>
+					</td>
+					<td>
+						<input type="text" name="Phoneno" maxlength="30" size="20">
 					</td>
 				</tr>
 			</table>
@@ -74,8 +82,9 @@
 			<input type="radio" name="gender" value="female">
 			Female<br>
 			</h4>
+		
+			<input type="submit">
 		</form>
-		<button type="button"><a href ="demo.php">Submit</a></button>
 	</body>
-
+	
 </html>
