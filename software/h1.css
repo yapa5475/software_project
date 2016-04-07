@@ -6,15 +6,15 @@
 
 
 form {
-  border: 5px solid  #a7caeb;
+  border: 5px solid  #FF6633;
   border-radius: 5px;
   font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
   overflow: hidden;
   width: 240px;
-  left: 250px;
-  background-color: #ffe680;
+  left: 50px;
+  background-color: #F0F0F0;
   position: absolute;
-  left: 1250px;
+  left: 20px;
   top: 250px;
   
   
@@ -33,7 +33,7 @@ input {
   padding: 20px 20px 0 20px;
 }
 .account-info label {
-  color: #395870;
+  color: black;
   display: block;
   font-weight: bold;
   margin-bottom: 20px;
@@ -49,7 +49,7 @@ input {
   width: 100%;
 }
 .account-action {
-  background-color: #A7CAEB;
+  background-color: #F0F0F0;
   border-top: 1px solid #c6c7cc;
   padding: 10px;
 }
@@ -69,5 +69,6 @@ input {
   font-size: 12px;
   float: left;
   margin: 10px 0 0 20px;
-  background-color: #ffe680;
+  background-color: #F0F0F0;
 }
+
