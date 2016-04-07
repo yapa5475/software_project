@@ -4,13 +4,13 @@
 }
 
 body{
-	background-image: url("newbackground.jpg");
+	background-image: url("hbackground.jpg");
 	background-color: #cccccc;
 	background-size: cover;
 }
 
 h1 {
-	color: yellow;
+	color: black;
 	text-align: center;
 	font-size: 50px;
 	font-style: italic;

@@ -4,13 +4,13 @@
 }
 
 body {
-	background-image: url("newbackground.jpg");
+	background-image: url("hbackground.jpg");
 	background-color: black;
 	background-size: cover;
 }
 
 h1 {
-	color: yellow;
+	color: black;
 	text-align: center;
 	font-size: 50px;
 	font-style: italic;
@@ -21,13 +21,13 @@ h1 {
 }
 
 h2 {
-	color: orange;
+	color: black;
 	line-height: 35px;
 	
 }
 
 h3 {
-	color: yellow;
+	color: black;
 	text-align: left;
 	font-size: 20px;
 	font-weight: bold;
@@ -37,7 +37,7 @@ h3 {
 }
 
 h4 {
-	color: white;
+	color: black;
 	text-align: left;
 	font-size: 15px;
 	font-weight: bold;
@@ -125,7 +125,7 @@ a {
 .boxed {
 	width: 250px;
 	padding: 15px;
-    border: 5px solid #a7caeb;
+    
     margin: 100px;
     background-image: url("");
     position: absolute;
@@ -136,7 +136,7 @@ a {
 .boxed1 {
 	width: 450px;
 	padding: 15px;
-    border: 5px solid #a7caeb;
+    
     margin: 100px;
     background-image: url("");
     position: absolute;
@@ -147,7 +147,7 @@ a {
 .boxed2 {
 	width: 200px;
 	padding: 15px;
-    border: 5px solid #a7caeb;
+    
     margin: 100px;
     background-image: url("");
     position: absolute;
