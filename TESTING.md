@@ -11,8 +11,18 @@ Our vision at LiveTutoring is to help students with last minute exam and homewor
 
 This is where LiveTutoring comes in. LiveTutoring is dedicated to help students find quick help when time is short or they are struggling to get a handle on a concept. By creating an account, students can look for available tutors and schedule an appointment with them in order to get quick, effective help.
 
-Automated Tests
+Automated Tests:
 
+Registrationphp.png shows a normal registation where all of the form values are filled in.
+THe first entry in database.png is this value that we just registred.
+
+registrationformwithoutlastname.png shows a registration form without the last name.
+
+error-registrationformwithoutlastname.png shows the error given when there is no last name in the form.
+Registrationformwithoutemail.png shows the form without the email
+errormessagenoemail.png shows the error message thrown when no email is in the form.
+
+All of these image files are provided on the gitHub page.
 
 
 User Acceptance Tests
