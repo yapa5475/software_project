@@ -15,24 +15,18 @@
 	<link rel="stylesheet" type="text/css" href="homepage.css">
 </head>
 	
-<body>
-	
-	
 	</header>
-
-	
 	<nav>
 		<ul>
 			<li><a href="homepage.html"><img border="0"	src="home.png" width="15" height="15"></a></li>
 			<li><a href="subjects.html">Subjects</a></li>
 			<li><a href="profile.html">Profile</a></li>
-			<li><a href="tutors.html">Tutors</a></li>
 			<li style="float:right"><a class="active" href="about.html">About</a></li>
 			<li style="float:right"><a class="active" href="signin.html">Sign In</a></li>
 					
 		</ul>
 	</nav>
-	
+	<body>
 	<section>
 		
 		<a href="homepage.html"><img src="logoLT.jpg" alt="logo" style="width:100px;height:100px;"></a><font size = "5" color="black"> LIVE TUTORING</font>
@@ -91,10 +85,39 @@
   <div class = img1>
 	
   </div>
-
-
   
-  
+ <style>
+.mySlides {display:none;}
+</style>
+<body>
+
+<div class="slide" >
+
+<img class="mySlides " src="1112.jpg" style="width:150%">
+<img class="mySlides " src="111111.jpg" style="width:150%">
+<img class="mySlides " src="1123.jpg" style="width:150%">
+<img class="mySlides " src="h11.jpg" style="width:150%">
+
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 3000);    
+}
+</script>
+</div>
+ 
  </div>
 	
 </body>

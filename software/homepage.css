@@ -140,3 +140,12 @@ li a:hover {
 .img1{
 	position: absolute;
 	left : 350px;
+
+}
+.slide{
+   width : 500px;
+   position: absolute;
+   left: 500px;
+}
+
+   
