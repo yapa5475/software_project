@@ -1,0 +1,120 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background-image: url("hbackground.jpg");
+	background-color: black;
+	background-size: cover;
+}
+
+h1 {
+	color: black;
+	text-align: center;
+	font-size: 50px;
+	font-style: italic;
+	font-family: "monotype corsiva", arial, serif;
+	font-weight: bold;
+	line-height: 0;
+	padding: 20px;
+}
+
+h2 {
+	color: black;
+	line-height: 35px;
+	
+}
+
+h3 {
+	color: black;
+	text-align: left;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 35px;
+	padding: 15px;
+	
+}
+
+h4 {
+	color: black;
+	text-align: left;
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 0.5;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	margin-left: 15px;
+	 
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #dddddd;
+}
+
+
+li a {
+	float: left;
+	display: block;
+	width: 20 px;
+	padding: 8px 10px 8px 10px;
+	text-decoration: none;
+	text-align: center;
+	color: black;
+	background-color: #dddddd;
+}
+
+li a:hover {
+	background-color: #555;
+	color: orange;
+	width: 200 px;
+}
+
+.active {
+	background-color: #4CAF50;
+	color: white;
+}
+
+td {
+	color: black;
+}
+
+a {
+	color: blue;
+}
+
+.active2 {
+	background-color: purple;
+	color: white;
+}
+
+.boxed {
+	width: 900px;
+	
+}
+
+.picture {
+
+}
+
+title {
+	color: black;
+}
+
+.style_prevu_kit:hover
+{
+    box-shadow: 0px 0px 150px #000000;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.5);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.5);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.5);
+    transition: all 200ms ease-in;
+    transform: scale(1.05);
+}
