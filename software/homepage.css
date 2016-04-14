@@ -40,7 +40,7 @@ body{
     background-image: url("");
     position: absolute;
     left: 1125px;
-    top: -100px;
+    top: -150px;
 }
 }     
 
@@ -66,6 +66,17 @@ h2 {
      line-height: 0.5px;
      padding: 5px;
 } 
+h3 {
+     font-family: "times new roman", serif;
+     font-style: normal;
+     font-size: 30px;
+     color: black;
+     font-weight: light;
+     font-variant: small-caps;
+     text-align: center;
+     line-height: 0.5px;
+     padding: 5px;
+}
 
 p {
     padding: 20px;
@@ -146,6 +157,14 @@ li a:hover {
    width : 500px;
    position: absolute;
    left: 500px;
+}
+header{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #A1C0F4;
+
 }
 
    
