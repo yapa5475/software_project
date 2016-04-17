@@ -127,49 +127,41 @@ li a:hover {
 .img1{
 	position: absolute;
 	left : 350px;
-	}
 
-.a1{
-	border: 5px solid black;
+.he1{
+	text-align: left;
 	position:absolute;
-	top: 480px;
-	left: 10px;
+	top: 150px;
 }
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
 
 .de1{
     text-align: left;
 	position:absolute;
-	top: 50px;
+	top: 150px;
 }
 
 .aa{
     text-align: left;
 	position:absolute;
-	top: 50px;
+	top: 150px;
 }
 
 .la{
     text-align: left;
 	position:absolute;
-	top: 50px;
+	top: 150px;
 }
 
 .de{
-	text-align: left;
+   text-align: left;
 	position:absolute;
-	top: 50px;
+	top: 150px;
 }
 
 .gs{
 text-align: left;
 	position:absolute;
-	top: 50px;
+	top: 150px;
 }
 
 .oc{
@@ -181,26 +173,39 @@ text-align: left;
 .tc{
 text-align: left;
 	position:absolute;
-	top: 50px;
+	top: 150px;
 }
 
 .pc{
 text-align: left;
 	position:absolute;
-	top: 50px;
+	top: 150px;
 }
 
 .sc{
 text-align: left;
 	position:absolute;
-	top: 50px;
+	top: 150px;
 }
 
 .nac{
 text-align: left;
 	position:absolute;
-	top: 50px;
+	top: 150px;
 }
 
 
 
+
+
+      
+.a1{
+	position:absolute;
+	top: 550px;
+	left: 500px;
+}
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
