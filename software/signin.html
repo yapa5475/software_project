@@ -1,5 +1,46 @@
 <!DOCTYPE html>
 <html>
+	<style>
+		div.dashed {
+			border-style: dashed;
+			border-color: #091170;
+			width: 400px;
+			height: 250px;
+			text-align ="center";
+			position : absolute;
+			left : 150px;
+			top : 170px;
+				}
+		div.dashed1 {
+			border-style: dashed;
+			border-color: #091170;
+			width: 400px;
+			height: 300px;
+			text-align ="center";
+			position : absolute;
+			left : 150px;
+			top : 450px;
+		}
+		div.dashed2 {
+			border-style: dashed;
+			border-color: #091170;
+			width: 400px;
+			height: 250px;
+			text-align ="center";
+			position : absolute;
+			left : 850px;
+			top : 170px;
+				}
+		div.dashed3 {
+			border-style: dashed;
+			border-color: #091170;
+			width: 400px;
+			height: 300px;
+			text-align ="center";
+			position : absolute;
+			left : 850px;
+			top : 450px;
+	</style>
 	<head>
    <title>LiveTutoring</title>
    <link rel="icon" href="logoLT.jpg" type="image/jpg" sizes="32x32">
@@ -15,41 +56,137 @@
 		<li><a href="tutors.html">Tutors</a></li>
 		<li style="float:right"><a class="active" href="about.html">About</a></li>
 		<li style="float:right"><a class="active2" href="signin.html">Sign In</a></li>
-
 	</ul>
 	
 <body>
 	<div class="boxed">
 		
 	</div>
-	<h1><a href="homepage.html"><img src="logoLT.jpg" alt="logo" style="width:100px;height:100px;"></a>  LIVE TUTORING</h1>
-	
-	<body>
-		<form>
-			<table width="450px">
-				<tr>
-					<td>
-						<label for="email" style = "color : Black">Email</label>
-					</td>
-					<td>
-						<input type="text" name="email" maxlength="50" size="30">
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<label for="password" style = "color : Black">Password</label>
-					</td>
-					<td>
-						<input type="password" name="password" maxlength="50" size="30">
-					</td>
-				</tr>
-			</table>
+	<a href="homepage.html"><img src="logoLT.jpg" alt="logo" style="width:100px;height:100px;"></a><font size = "5" color="black"> LIVE TUTORING</font>
+		
+	<div class="dashed" align="center" >
+		<form action = "profile.html">
+			<br>
+
+			<p > 
+				Sign in -- For students
+			</p>
+			<br>
+			<br>
+					<label>
+						E-mail
+						<input type="email" name="Email">
+					</label>
+					<br>
+					<br>
+					<label>
+						Password
+						<input type="text" name="Password">
+					</label>
+					<br>
+					<br>
+					<input class="btn" type="submit" name="submit" value="Log-in">
 		</form>
-	<a href="signedinpage.html" style = "color : Black">Sign In</a>
+	</div>
+	
+	<div class="dashed1" align="center" >
+		<form action = "profile.html">
+			<br>
+			<p > 
+				Sign up -- For Students
+			</p>
+					<br>
+					<br>
+					<label>
+						Name
+						<input type="text" name="Name">
+					</label>
+					<br>
+					<br>
+					<label>
+						E-mail
+						<input type="email" name="Email">
+					</label>
+					<br>
+					<br>
+					<label>
+						Password
+						<input type="text" name="Password">
+					</label>
+					<br>
+					<br>
+					<label>
+					    Confirm	Password
+						<input type="text" name="Password">
+					</label>
+					<br>
+					<br>
+					<input class="btn" type="submit" name="submit" value="Sign-Up">
+		</form>
+	</div>
+	
+	<div class="dashed2" align="center" >
+		<form action = "profile.html">
+			<br>
+
+			<p > 
+				Sign in -- For Tutors
+			</p>
+			<br>
+			<br>
+					<label>
+						E-mail
+						<input type="email" name="Email">
+					</label>
+					<br>
+					<br>
+					<label>
+						Password
+						<input type="text" name="Password">
+					</label>
+					<br>
+					<br>
+					<input class="btn" type="submit" name="submit" value="Log-in">
+		</form>
+	</div>
+	
+	<div class="dashed3" align="center" >
+		<form action = "profile.html">
+			<br>
+			<p > 
+				Sign up -- For Tutors
+			</p>
+					<br>
+					<br>
+					<label>
+						Name
+						<input type="text" name="Name">
+					</label>
+					<br>
+					<br>
+					<label>
+						E-mail
+						<input type="email" name="Email">
+					</label>
+					<br>
+					<br>
+					<label>
+						Password
+						<input type="text" name="Password">
+					</label>
+					<br>
+					<br>
+					<label>
+					    Confirm	Password
+						<input type="text" name="Password">
+					</label>
+					<br>
+					<br>
+					<input class="btn" type="submit" name="submit" value="Sign-Up">
+		</form>
+	</div>
 		
 	
-	
-	
-	<a style = "color : Black">Don't have an account? Click <a href="signup.php" style = "color : Black">Here</a><a style = "color : Black"> to create one now.</a>
+
 </body>
 </html>
