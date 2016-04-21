@@ -13,7 +13,7 @@
 		<li><a href="profile.html">Profile</a></li>
 		<li><a href="tutors.html">Tutors</a></li>
 		<li style="float:right"><a class="active" href="about.html">About</a></li>
-		<li style="float:right"><a class="active2" href="signin.html">Sign In</a></li>
+		<li style="float:right"><a class="active2" href="signin.php">Sign In</a></li>
 
 	</ul>
 	
@@ -86,5 +86,9 @@
 			<input type="submit">
 		</form>
 	</body>
+
+<?php
+	
+?>
 	
 </html>

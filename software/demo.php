@@ -1,4 +1,6 @@
+<!DOCTYPE html>
 <?php	
+	session_start();
 /*
 	$user = 'root';
 	$pass = 'default';
@@ -32,53 +34,97 @@
 	$value5 = $_POST['Email'];
 	$value6 = $_POST['Phoneno'];
 	
-	
-	if (!empty($value) and !empty($value1) and !empty($value2) and !empty($value3) and !empty($value4) and !empty($value5) and !empty($value6) and ($value1==$value2)){
+	if (!empty($value) and !empty($value1) and !empty($value2) and !empty($value3) and !empty($value4) and !empty($value5) and !empty($value6)){
+		
+		//works --- checks to make sure the username entered is not taken
+		function checkUsernameAvail($value){
+			$query = mysql_query("SELECT Username FROM Users WHERE Username ='".$value."'");
+			if (mysql_num_rows($query) !=0){
+				echo( "Username already exists. Please enter a new username.");
+				break;
+			}
+		}
+		checkUsernameAvail($value);
+		/*
+		// --- checks to make sure the email address entered is a valid email address
+		function validateEmail($value5){
+			$query2 = mysql_query("SELECT Email FROM Users WHERE Email ='".$value5."'");
+			if (mysql_num_rows($query) !=0){
+				echo "Email already exists. Please sign in.";
+				break;
+			}
+			else{
+				if (filter_var($value5, FILTER_VALIDATE_EMAIL)) {
+					echo("This is not a valid email address");
+					break;
+					} else {
+						echo("This is a valid email address");
+					}
+			}
+		}
+		validateEmail($value5);
+		*/
+		//works --- checks to make sure the email address entered is not taken
+		function checkEmailAvail($value5){
+			$query3 = mysql_query("SELECT Email FROM Users WHERE Email ='".$value5."'");
+			if (mysql_num_rows($query3) !=0){
+				echo "This email is already in use. Please enter a new email or login.";
+				break;
+			}
+		}
+		checkEmailAvail($value5);
+
+		//works -- checks if password and confirmpassword are the same
+		function checkPasswordEquality($value1,$value2){
+			$query4 = mysql_query("SELECT Password FROM Users WHERE Password ='".$value1."'");
+			$query5 = mysql_query("SELECT Confirmpassword FROM Users WHERE Confirmpassword ='".$value2."'");
+			if($query4 == $query5){
+				echo "Passwords do not match. Please check your passwords.";
+				break;
+			}
+			else{
+				echo "passwords match";
+			}
+		}
+		checkPasswordEquality($value1,$value2);
+		/*
+		function checkPhoneNo($value6){
+			$numbersOnly = ereg_replace("[^0-9]","",$value6);
+			$numDigits = strlen($numbersOnly);
+			if($numDigits == 10) {
+				echo "Valid phone number";
+			}
+			else{
+				"Invalid phone number";
+				break;
+			}
+		}
+		
+		checkPhoneNo($value6);
+		
+		
+		function checkPhoneNoAvail($value6){
+			$query3 = mysql_query("SELECT Phoneno FROM Users WHERE Phoneno ='".$value6."'");		
+			if (mysql_num_rows($query3) !=0){
+				echo "Phone number already exists. Please enter a new phone number or login.";
+				break;
+			}
+		}
+		checkPhoneNoAvail($value6);
+		*/
+		
+		
 		$sql = "INSERT INTO Users (Username, Password, Confirmpassword, First_name, Last_name, Email, Phoneno) VALUES ('$value', '$value1', '$value2', '$value3', '$value4', '$value5', '$value6')";
-		}
-	
-	else{
-		if($value1 != $value2){
-			echo("Password and confirm password do not match\n");
-		}
-			
-		if(empty($value)){
-			echo("username can not be left blank.\n");
-		}
-	
-		if(empty($value1)){
-			echo("password can not be left blank.\n");
-		}
-		
-		if(empty($value2)){
-			echo("confirm password can not be left blank.\n");
-		}
-		
-		if(empty($value3)){
-			echo("First name can not be left blank.\n");
-		}
-		
-		if(empty($value4)){
-			echo("last name can not be left blank.\n");
-		}
-		
-		if(empty($value5)){
-			echo("Email can not be left blank.\n");
-		}
-		
-		if(empty($value6)){
-			echo("Phone numer can not be left blank.\n");
-		}
-		
-		
+
+		echo "Account created";
 	}
-	
-	/*
+
 	if (!mysql_query($sql)) {
 		die('Error: ' . mysql_error());
-	}
-	*/
+		}
+	
 	
 	mysql_close();
 		
 ?>
+</html>
