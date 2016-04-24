@@ -14,7 +14,7 @@
 			<li><a class="active2" href="profile.html">Profile</a></li>
 			<li><a href="tutors.html">Tutors</a></li>
 			<li style="float:right"><a class="active" href="about.html">About</a></li>
-			<li style="float:right"><a class="active" href="signin.php">Sign In</a></li>
+			<li style="float:right"><a class="active" href="signin.php">Sign Out</a></li>
 		</ul>
 	</nav>
 <body>
@@ -22,72 +22,62 @@
 </body>
 
 <?php
-	
-	define('DB_NAME', 'Tutoring');
-	define('DB_USER', 'root');
-	define('DB_PASSWORD', 'default');
-	define('DB_HOST', 'localhost');
-	
-	$link = mysql_connect(DB_HOST, DB_USER, DB_PASSWORD);
-	
-	if(!$link){
-		die('Could not connect: ' . mysql_error());
-	}
-	
-	$db_selected = mysql_select_db(DB_NAME, $link);
-	
-	if(!$db_selected) {
-		die('Cant use ' . DB_NAME . ': ' . mysql_error());
-	}
-	
+	session_start();
+	$host = "localhost";
+	$user = "root";
+	$pass = "default";
+	$db = "Tutoring";
+	mysql_connect($host, $user, $pass);
+	mysql_select_db($db);
 
-	$value = $_POST['Username'];
-	$value1 = $_POST['Password'];
+	$Username = $_POST['Username'];
+	$Password = $_POST['Password'];
+	$First_name = $_POST['First_name'];
+	$Last_name = $_POST['Last_name'];
+	$Email = $_POST['Email'];
+	$Phoneno = $_POST['Phoneno'];
 
 
 	
-	//echo "sdfsa";
-	if(empty($value) or empty($value1)){
-		echo "Enter all fields";
+	if (empty($Username) or empty($Password)){
+		header('Location: signin.php');
+		echo "Please enter all fields";
+		exit();
 	}
 	else{
-		$result1 = mysql_query("SELECT Username, Password FROM Users WHERE Username = '".$value."' AND Password = '".$value1."'");
-		//$result2 = mysql_query("SELECT Username FROM Users WHERE Password = '".$value1."'");
 
-		if (mysql_num_rows($result1)>0)
-		{
-			$_SESSION["logged_in"] = true;
-			$_SESSION["name"] = $value;
+		if(isset($_POST['Username'])){
+					
+			$sql = "SELECT * FROM Users WHERE Username = '".$Username."' AND Password = '".$Password."'  LIMIT 1";
+			$res = mysql_query($sql);
 
-			echo "Welcome $value";
+			//echo $Username;
+			$First_name = mysql_query("SELECT First_name FROM Users WHERE Username = '".$Username."'");
+			$First = mysql_fetch_assoc($First_name);
+			$First_name = $First['First_name'];
+			
 
-		}
-		else{
-			echo "The username and password are incorrect";
+			$Last_name = mysql_query("SELECT Last_name FROM Users WHERE Username = '".$Username."'");
+			$Last = mysql_fetch_assoc($Last_name);
+			$Last_name = $Last['Last_name'];
+
+			if(mysql_num_rows($res) == 1){
+				//break;
+			}
+			else{
+				//echo "Invalid";
+				header('Location: signin.php?msg=invalid');
+				echo "Invalid";
+				//exit();
+			}
 		}
 	}
+	
 
 
-	//$value1=$result1
-	//echo("asdf");
-/*
-	else{
-		while()
-	}
-*/		
-
-	/*if (!mysql_query($sql)) {
-		die('Error: ' . mysql_error());
-		}
-	
-	
-	mysql_close();
-	*/
-	
-		
 ?>
-	<a><?php $value ?></a>
-
+	<h1>Hello, <?php echo $First_name; echo " "; echo $Last_name; ?> </h1>
+	<p>Welcome to your personalized</p>
 
 </html>
 

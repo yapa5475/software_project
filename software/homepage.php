@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+ <head>
+   <title>LiveTutoring</title>
+   <link rel="icon" href="logoLT.jpg" type="image/jpg" sizes="32x32">
+ </head>
+ <head>
+	
+	<link href="h1.css" media="screen" rel="stylesheet" />
+ </head>
+<head>
+	<meta charset= "utf-8"/>
+	<title>Live Tutoring</title>
+	<link rel="stylesheet" type="text/css" href="homepage.css">
+</head>
+	
+	</header>
+	<nav>
+		<ul>
+			<li><a href="homepage.html"><img border="0"	src="home.png" width="15" height="15"></a></li>
+			<li><a href="subjects.html">Subjects</a></li>
+			<li><a href="profile.html">Profile</a></li>
+			<li style="float:right"><a class="active" href="about.html">About</a></li>
+			<li style="float:right"><a class="active" href="signin.html">Sign In</a></li>
+					
+		</ul>
+	</nav>
+	<body>
+	<section>
+		
+		<a href="homepage.html"><img src="logoLT.jpg" alt="logo" style="width:100px;height:100px;"></a><font size = "5" color="black"> LIVE TUTORING</font>
+		<p><h2><font size = "8" color="black">Find a tutor at your earliest convenience</font></h2>
+	
+		<p align ="left"><font size = "3" color="black">Want to see if we offer help for your class? </p>
+		   
+		
+		
+	</section>
+
+	<aside>
+	
+	</aside>
+	
+	<div align ="center">
+			<div class="boxed">
+ <h2 style="font-family:Aerial;"><font size = "3" color="black">Online Tutoring</h2></font>
+ <h2 style="font-family:new century schoolbook;"><font size = "3" color="black">One on One help</h2></font>
+ <h2 style="font-family:new century schoolbook;"><font  size = "3"color="black">24/7    </h2></font>
+ <h2 style="font-family:new century schoolbook;"><font  size = "3"color="black">  Help on demand</h2></font>
+ </div>
+		
+	
+
+	</div>
+	
+  <form action="contact.php" method="post">
+  <fieldset class="account-info">
+    <label for = "Name">Name<input type="text" name="Name"></label>
+    <label>
+      E-mail
+      <input type="email" name="Email">
+    </label>
+     <label>
+      Contact Number
+      <input type="integer" name="Phoneno">
+    </label>
+    <label>
+      Zip Code
+      <input type="integer" name="Zip">
+    </label>
+    <label>
+		Comments
+          <textarea id="" name="Comments" rows="5"></textarea>
+    </label>
+  </fieldset>
+  <fieldset class="account-action">
+    <input class="btn" type="submit" name="submit" value="Contact">
+  </fieldset>
+  </form>
+ 
+  <div class = img1>
+	
+  </div>
+  
+ <style>
+.mySlides {display:none;}
+</style>
+<body>
+
+<div class="slide" >
+
+<img class="mySlides " src="1112.jpg" style="width:150%">
+<img class="mySlides " src="111111.jpg" style="width:150%">
+<img class="mySlides " src="1123.jpg" style="width:150%">
+<img class="mySlides " src="h11.jpg" style="width:150%">
+
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 3000);    
+}
+</script>
+</div>
+ 
+ </div>
+	
+</body>
+
+
+</html>

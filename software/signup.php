@@ -85,10 +85,5 @@
 		
 			<input type="submit">
 		</form>
-	</body>
-
-<?php
-	
-?>
-	
+	</body>	
 </html>

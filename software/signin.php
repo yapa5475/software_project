@@ -11,7 +11,7 @@
 	<ul>
 		<li><a href ="homepage.html"><img border="0" src="home.png" width="15" height="15"></a></li>
 		<li><a href="subjects.html">Subjects</a></li>
-		<li><a href="profile.php">Profile</a></li>
+		<!--<li><a href="profile.php">Profile</a></li>-->
 		<li><a href="tutors.html">Tutors</a></li>
 		<li style="float:right"><a class="active" href="about.html">About</a></li>
 		<li style="float:right"><a class="active2" href="signin.php">Sign In</a></li>
@@ -19,7 +19,7 @@
 	</ul>
 	
 <body>
-	<form action="home.php" method="post"/>
+	<form action="profile.php" method="post"/>
 	<div class="boxed">
 		
 	</div>
@@ -47,7 +47,7 @@
 				
 				<tr>
 					<td>
-						<button type="submit" name="btn-login" >Sign In</button>
+						<button type="submit" name="submit" >Sign In</button>
 					</td>
 				</tr>
 				
@@ -57,7 +57,5 @@
 	</form>
 	
 	<a style = "color : Black">Don't have an account? Click <a href="signup.php" style = "color : Black">Here</a><a style = "color : Black"> to create one now.</a>
-</body>
+	</body>
 </html>
-
-
