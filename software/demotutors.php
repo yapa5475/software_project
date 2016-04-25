@@ -83,7 +83,7 @@
 				break;
 			}
 			else{
-				echo "passwords match";
+				//echo "passwords match";
 			}
 		}
 		checkPasswordEquality($value1,$value2);

@@ -20,9 +20,9 @@
 		<ul>
 			<li><a href="homepage.html"><img border="0"	src="home.png" width="15" height="15"></a></li>
 			<li><a href="subjects.html">Subjects</a></li>
-			<li><a href="profile.html">Profile</a></li>
 			<li style="float:right"><a class="active" href="about.html">About</a></li>
-			<li style="float:right"><a class="active" href="signin.html">Sign In</a></li>
+			<li style="float:right"><a class="active" href="signin.php">Sign In as Student</a></li>
+			<li style="float:right"><a class="active" href="signintutors.php">Sign In as Tutor</a></li>
 					
 		</ul>
 	</nav>
@@ -54,27 +54,24 @@
 
 	</div>
 	
-  <form action ="contact.html">
+  <form action="contact.php" method="post">
   <fieldset class="account-info">
-    <label>
-      Name
-      <input type="text" name="Name">
-    </label>
+    <label for = "Name">Name<input type="text" name="Name"></label>
     <label>
       E-mail
       <input type="email" name="Email">
     </label>
      <label>
       Contact Number
-      <input type="integer" name="Number">
+      <input type="integer" name="Phoneno">
     </label>
     <label>
       Zip Code
-      <input type="integer" name="Number">
+      <input type="integer" name="Zip">
     </label>
     <label>
 		Comments
-          <textarea id="" name="contact[message]" rows="5"></textarea>
+          <textarea id="" name="Comments" rows="5"></textarea>
     </label>
   </fieldset>
   <fieldset class="account-action">
@@ -121,4 +118,6 @@ function carousel() {
  </div>
 	
 </body>
+
+
 </html>

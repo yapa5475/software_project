@@ -11,9 +11,8 @@
 		<ul>
 			<li><a href ="homepage.html"><img border="0" src="home.png" width="15" height="15"></a></li>
 			<li><a href="subjects.html">Subjects</a></li>
-			<li><a class="active2" href="profile.html">Profile</a></li>
+			<li><a class="active2" >Profile</a></li>
 			<li><a href="tutors.html">Tutors</a></li>
-			<li style="float:right"><a class="active" href="about.html">About</a></li>
 			<li style="float:right"><a class="active" href="signin.php">Sign Out</a></li>
 		</ul>
 	</nav>
@@ -82,12 +81,7 @@
 				
 			
 
-			if(substr($imageType,0,5) == "image"){
-				echo "Working code";
-			}
-			else{
-				echo "adsfas";
-			}
+			
 			}
 
 		

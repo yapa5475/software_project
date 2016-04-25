@@ -10,14 +10,14 @@
 	<ul>
 		<li><a href ="homepage.html"><img border="0" src="home.png" width="15" height="15"></a></li>
 		<li><a href="subjects.html">Subjects</a></li>
-		<li><a href="profile.html">Profile</a></li>
-		<li><a href="tutors.html">Tutors</a></li>
 		<li style="float:right"><a class="active" href="about.html">About</a></li>
-		<li style="float:right"><a class="active2" href="signin.php">Sign In</a></li>
-
+		<li style="float:right"><a class="active" href="signin.php">Sign In as Student</a></li>
+		<li style="float:right"><a class="active2" href="signintutors.php">Sign In as Tutor</a></li>
+		
 	</ul>
 	<div align="center">
 	<form action="demotutors.php" method="post"/>
+	<h2> Sign up as a Tutor </h2>
 			<table width="450px">
 				<tr>
 					<td>
@@ -75,14 +75,7 @@
 						<input type="text" name="Phoneno" maxlength="30" size="20">
 					</td>
 				</tr>
-			</table>
-			<h4>
-			<input type="radio" name="gender" value="male">
-			Male
-			<input type="radio" name="gender" value="female">
-			Female<br>
-			</h4>
-		
+			</table>		
 			<input type="submit">
 		</form>
 		</div>

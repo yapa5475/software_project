@@ -14,9 +14,11 @@
 		<!--<li><a href="profile.php">Profile</a></li>-->
 		<li><a href="tutors.html">Tutors</a></li>
 		<li style="float:right"><a class="active" href="about.html">About</a></li>
-		<li style="float:right"><a class="active2" href="signin.php">Sign In</a></li>
-
+		<li style="float:right"><a class="active" href="signin.php">Sign In as Student</a></li>
+		<li style="float:right"><a class="active2" href="signintutors.php">Sign In as Tutor</a></li>
 	</ul>
+	
+	
 	
 <body>
 	<form action="profile.php" method="post"/>
@@ -24,7 +26,7 @@
 		
 	</div>
 	<h1><a href="homepage.html"><img src="logoLT.jpg" alt="logo" style="width:100px;height:100px;"></a>  LIVE TUTORING</h1>
-	
+	<h2> Sign in as a Student </h2>
 	<body>
 		<form>
 			<table width="450px">

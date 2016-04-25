@@ -13,7 +13,6 @@
 			<li><a href="subjects.html">Subjects</a></li>
 			<li><a class="active2" href="profile.html">Profile</a></li>
 			<li><a href="tutors.html">Tutors</a></li>
-			<li style="float:right"><a class="active" href="about.html">About</a></li>
 			<li style="float:right"><a class="active" href="signin.php">Sign Out</a></li>
 		</ul>
 	</nav>
@@ -52,16 +51,16 @@
 
 		if(isset($_POST['Username'])){
 					
-			$sql = "SELECT * FROM Users WHERE Username = '".$Username."' AND Password = '".$Password."'  LIMIT 1";
+			$sql = "SELECT * FROM Tutors WHERE Username = '".$Username."' AND Password = '".$Password."'  LIMIT 1";
 			$res = mysql_query($sql);
 
 			//echo $Username;
-			$First_name = mysql_query("SELECT First_name FROM Users WHERE Username = '".$Username."'");
+			$First_name = mysql_query("SELECT First_name FROM Tutors WHERE Username = '".$Username."'");
 			$First = mysql_fetch_assoc($First_name);
 			$First_name = $First['First_name'];
 			
 
-			$Last_name = mysql_query("SELECT Last_name FROM Users WHERE Username = '".$Username."'");
+			$Last_name = mysql_query("SELECT Last_name FROM Tutors WHERE Username = '".$Username."'");
 			$Last = mysql_fetch_assoc($Last_name);
 			$Last_name = $Last['Last_name'];
 
@@ -69,7 +68,7 @@
 			$imageData = mysql_real_escape_string(file_get_contents($_FILES["Images"]["tmp_name"]));
 			$imageType = mysql_escape_string($_FILES["Images"]["type"]);
 
-			$sql = "INSERT INTO Users (Images) VALUES ('$Images')";
+			$sql = "INSERT INTO Tutors (Images) VALUES ('$Images')";
 
 				echo "picture uploaded";
 
@@ -106,7 +105,7 @@
 
 ?>
 	<h1>Hello, <?php echo $First_name; echo " "; echo $Last_name; ?> </h1>
-	<p>Welcome to your personalized tutoring homepage</p>
+
 
 </html>
 
