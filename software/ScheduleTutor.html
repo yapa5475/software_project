@@ -1,10 +1,23 @@
 <!DOCTYPE html>
+
 <html lang = "en">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
  <head>
    <title>LiveTutoring</title>
    <link rel="icon" href="logoLT.jpg" type="image/jpg" sizes="32x32">
  </head>
+ <style>
+		div.dashed {
+			border-style: dashed;
+			border-color: #091170;
+			width: 600px;
+			height: 350px;
+			text-align ="center";
+			position : absolute;
+			left : 150px;
+			top : 170px;
+				}
+ </style>
 
 <head>
 	<meta charset="utf-8">
@@ -21,39 +34,51 @@
 			<li><a href="homepage.html"><img border="0"	src="home.png" width="15" height="15"></a></li>
 			<li><a href="subjects.html">Subjects</a></li>
 			<li><a href="profile.html">Profile</a></li>
-			<li><a href="tutors.html">Tutors</a></li>
 			<li style="float:right"><a class="active" href="about.html">About</a></li>
 			<li style="float:right"><a class="active" href="signin.html">Sign In</a></li>			
 		</ul>
 	</nav>
+	<h1><a href="homepage.html"><img src="logoLT.jpg" alt="logo" style="width:100px;height:100px;"></a>  LIVE TUTORING</h1>
+	<div class = "dashed" align= "center">
+		<p>Schedule Your Appointment Here!</p>
+		<form  action ="scheduletutor.php">
+			<br>
+			<br>
+			<label>
+				Name
+				<input type="text" name="name">
+			</label>
+			<br>
+			<br>
+			<label>
+				Email
+				<input type="email" name="email">
+			</label>
+			<br>
+			<br>
+			<label>
+				Date
+				<input type="date" name="date">
+			</label>
+			<br>
+			<br>
+			<label>
+				Time
+				<input type="time" name="time">
+			</label>
+			<br>
+			<br>
+			<label>
+				Subjects
+				<input type="text" name="subjects">
+			</label>
+			<br>
+			<br>
+			<input class="btn" type="submit" name="submit" value="Schedule">
+		</form>
 	
-	<form action ="contact.html">
-  <fieldset class="account-info">
-    <label>
-      Name
-      <input type="text" name="Name">
-    </label>
-    <label>
-      E-mail
-      <input type="email" name="Email">
-    </label>
-     <label>
-      Date
-      <input type="integer" name="Number">
-    </label>
-    <label>
-      Time
-      <input type="integer" name="Number">
-    </label>
-    <label>
-		Place
-          <textarea id="" name="contact[message]" rows="5"></textarea>
-    </label>
-  </fieldset>
-  <fieldset class="account-action">
-    <input class="btn" type="submit" name="submit" value="Contact">
-  </fieldset>
-  </form>
+	</div>
+
 
   
  
