@@ -63,7 +63,7 @@
 		$sql = "INSERT INTO Inquiry (Name, Email, Phoneno, Zip, Comments) VALUES ('$Name', '$Email', '$Phoneno', '$Zip', '$Comments')";	
 	}
 	else{
-		header('Location: homepage.php');
+		header('Location: homepage.html');
 		echo "Please enter all fields";
 	}
 

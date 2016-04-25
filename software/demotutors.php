@@ -38,7 +38,7 @@
 		
 		//works --- checks to make sure the username entered is not taken
 		function checkUsernameAvail($value){
-			$query = mysql_query("SELECT Username FROM Users WHERE Username ='".$value."'");
+			$query = mysql_query("SELECT Username FROM Tutors WHERE Username ='".$value."'");
 			if (mysql_num_rows($query) !=0){
 				echo( "Username already exists. Please enter a new username.");
 				break;
@@ -48,7 +48,7 @@
 		/*
 		// --- checks to make sure the email address entered is a valid email address
 		function validateEmail($value5){
-			$query2 = mysql_query("SELECT Email FROM Users WHERE Email ='".$value5."'");
+			$query2 = mysql_query("SELECT Email FROM Tutors WHERE Email ='".$value5."'");
 			if (mysql_num_rows($query) !=0){
 				echo "Email already exists. Please sign in.";
 				break;
@@ -66,7 +66,7 @@
 		*/
 		//works --- checks to make sure the email address entered is not taken
 		function checkEmailAvail($value5){
-			$query3 = mysql_query("SELECT Email FROM Users WHERE Email ='".$value5."'");
+			$query3 = mysql_query("SELECT Email FROM Tutors WHERE Email ='".$value5."'");
 			if (mysql_num_rows($query3) !=0){
 				echo "This email is already in use. Please enter a new email or login.";
 				break;
@@ -76,8 +76,8 @@
 
 		//works -- checks if password and confirmpassword are the same
 		function checkPasswordEquality($value1,$value2){
-			$query4 = mysql_query("SELECT Password FROM Users WHERE Password ='".$value1."'");
-			$query5 = mysql_query("SELECT Confirmpassword FROM Users WHERE Confirmpassword ='".$value2."'");
+			$query4 = mysql_query("SELECT Password FROM Tutors WHERE Password ='".$value1."'");
+			$query5 = mysql_query("SELECT Confirmpassword FROM Tutors WHERE Confirmpassword ='".$value2."'");
 			if($query4 == $query5){
 				echo "Passwords do not match. Please check your passwords.";
 				break;
@@ -104,7 +104,7 @@
 		
 		
 		function checkPhoneNoAvail($value6){
-			$query3 = mysql_query("SELECT Phoneno FROM Users WHERE Phoneno ='".$value6."'");		
+			$query3 = mysql_query("SELECT Phoneno FROM Tutors WHERE Phoneno ='".$value6."'");		
 			if (mysql_num_rows($query3) !=0){
 				echo "Phone number already exists. Please enter a new phone number or login.";
 				break;
@@ -114,7 +114,7 @@
 		*/
 		
 		
-		$sql = "INSERT INTO Users (Username, Password, Confirmpassword, First_name, Last_name, Email, Phoneno) VALUES ('$value', '$value1', '$value2', '$value3', '$value4', '$value5', '$value6')";
+		$sql = "INSERT INTO Tutors (Username, Password, Confirmpassword, First_name, Last_name, Email, Phoneno) VALUES ('$value', '$value1', '$value2', '$value3', '$value4', '$value5', '$value6')";
 
 		echo "Account created";
 	}

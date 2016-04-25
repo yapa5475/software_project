@@ -17,7 +17,7 @@
 
 	</ul>
 	<div align="center">
-	<form action="demo.php" method="post"/>
+	<form action="demotutors.php" method="post"/>
 			<table width="450px">
 				<tr>
 					<td>
