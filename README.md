@@ -5,7 +5,7 @@
 
 
 Members Name :-  Jwalin Maniar,
-                 Monetk Thind,
+                 Montek Thind,
                  Shambhavi Srivastava,
                  Yash Parekh
 
