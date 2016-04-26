@@ -9,8 +9,71 @@
 		<title>Subjects - Live Tutoring</title>
 		<link rel="Stylesheet" type="text/css" href="subjects.css">
 	</head>
+<?php
+	session_start();
+	$host = "localhost";
+	$user = "root";
+	$pass = "default";
+	$db = "Tutoring";
+	mysql_connect($host, $user, $pass);
+	mysql_select_db($db);
 
+	$Username = $_POST['Username'];
+	$Password = $_POST['Password'];
+	$First_name = $_POST['First_name'];
+	$Last_name = $_POST['Last_name'];
+	$Email = $_POST['Email'];
+	$Phoneno = $_POST['Phoneno'];
+	$Images = $_POST['Images'];
+
+
+	
+	if (empty($Username) or empty($Password)){
+		header('Location: signin.php');
+		echo "Please enter all fields";
+		exit();
+	}
+	else{
+
+		if(isset($_POST['Username'])){
+					
+			$sql = "SELECT * FROM Users WHERE Username = '".$Username."' AND Password = '".$Password."'  LIMIT 1";
+			$res = mysql_query($sql);
+
+			//echo $Username;
+			$First_name = mysql_query("SELECT First_name FROM Users WHERE Username = '".$Username."'");
+			$First = mysql_fetch_assoc($First_name);
+			$First_name = $First['First_name'];
+			
+
+			$Last_name = mysql_query("SELECT Last_name FROM Users WHERE Username = '".$Username."'");
+			$Last = mysql_fetch_assoc($Last_name);
+			$Last_name = $Last['Last_name'];
+
+			$imageName = mysql_real_escape_string($_FILES["Images"]["name"]);
+			$imageData = mysql_real_escape_string(file_get_contents($_FILES["Images"]["tmp_name"]));
+			$imageType = mysql_escape_string($_FILES["Images"]["type"]);
+
+			$sql = "INSERT INTO Users (Images) VALUES ('$Images')";
+
+			if(mysql_num_rows($res) == 1){
+							
+			}
+
+			else{
+				//echo "Invalid";
+				header('Location: signin.php?msg=invalid');
+				echo "Invalid";
+				//exit();
+			}
+		}
+	}
+	
+
+
+?>
 <body>
+	<h2>Hello, <?php echo $First_name; echo " "; echo $Last_name; ?> </h3>
 	<div >	
 		<nav >
 			<ul>

@@ -140,3 +140,13 @@ li a:hover {
 	top: 550px;
 	text-align: left;
 }
+
+div#footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px;
+    position: absolute;
+    bottom: 0;
+}

@@ -1,4 +1,20 @@
 <!DOCTYPE html>
+<html>
+	<head>
+   <title>LiveTutoring</title>
+   <link rel="icon" href="logoLT.jpg" type="image/jpg" sizes="32x32">
+ </head>
+	<head>
+		<link rel="Stylesheet" type="text/css" href="signin.css">
+	</head>
+	
+	<ul>
+		<li><a href ="homepage.html"><img border="0" src="home.png" width="15" height="15"></a></li>
+		<li><a href="subjects.html">Subjects</a></li>
+		<li style="float:right"><a class="active" href="about.html">About</a></li>
+		<li style="float:right"><a class="active2" href="signin.php">Sign In as Student</a></li>
+		<li style="float:right"><a class="active" href="signintutors.php">Sign In as Tutor</a></li>
+	</ul>
 <?php
 	session_start();
 /*
@@ -33,7 +49,11 @@
 	$value4 = $_POST['Last_name'];
 	$value5 = $_POST['Email'];
 	$value6 = $_POST['Phoneno'];
-	
+	$value7 = $_POST['Course1'];
+	$value8 = $_POST['Course2'];
+	$value9 = $_POST['Course3'];
+
+
 	if (!empty($value) and !empty($value1) and !empty($value2) and !empty($value3) and !empty($value4) and !empty($value5) and !empty($value6)){
 		
 		//works --- checks to make sure the username entered is not taken
@@ -112,9 +132,10 @@
 		}
 		checkPhoneNoAvail($value6);
 		*/
+		$passwordmd5 = md5($value1);
+		$confirmmd5 = md5($value2);
 		
-		
-		$sql = "INSERT INTO Tutors (Username, Password, Confirmpassword, First_name, Last_name, Email, Phoneno) VALUES ('$value', '$value1', '$value2', '$value3', '$value4', '$value5', '$value6')";
+		$sql = "INSERT INTO Tutors (Username, Password, Confirmpassword, First_name, Last_name, Email, Phoneno, Course1, Course2, Course3) VALUES ('$value', '$passwordmd5', '$confirmmd5', '$value3', '$value4', '$value5', '$value6', '$value7', '$value8', '$value9')";
 
 		echo "Account created";
 	}

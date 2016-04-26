@@ -11,8 +11,6 @@
 	<ul>
 		<li><a href ="homepage.html"><img border="0" src="home.png" width="15" height="15"></a></li>
 		<li><a href="subjects.html">Subjects</a></li>
-		<!--<li><a href="profile.php">Profile</a></li>-->
-		<li><a href="tutors.html">Tutors</a></li>
 		<li style="float:right"><a class="active" href="about.html">About</a></li>
 		<li style="float:right"><a class="active" href="signin.php">Sign In as Student</a></li>
 		<li style="float:right"><a class="active2" href="signintutors.php">Sign In as Tutor</a></li>	
@@ -30,7 +28,7 @@
 	<h2> Sign in as a Tutor </h2>
 	
 	<body>
-		<form>
+		<form action="profile_tutors.php" method="post"/>
 			<table width="450px">
 				<tr>
 					<td>
@@ -62,4 +60,8 @@
 	
 	<a style = "color : Black">Don't have an account? Click <a href="signuptutors.php" style = "color : Black">Here</a><a style = "color : Black"> to create one now.</a>
 	</body>
+	
+	<div id= "footer">
+		2016 Live Tutoring
+	</div>
 </html>

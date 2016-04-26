@@ -59,6 +59,36 @@
 						<input type="text" name="Last_name" maxlength="50" size="20">
 					</td>
 				</tr>
+				
+				<tr>
+					<td>
+						<label for="Course1">Course1</label>
+					</td>
+					<td>
+						<input type="text" name="Course1" maxlength="50" size="20">
+					</td>
+				</tr>
+				
+				<tr>
+					<td>
+						<label for="Course2">Course2</label>
+					</td>
+					<td>
+						<input type="text" name="Course2" maxlength="50" size="20">
+					</td>
+				</tr>
+				
+				<tr>
+					<td>
+						<label for="Course3">Course3</label>
+					</td>
+					<td>
+						<input type="text" name="Course3" maxlength="50" size="20">
+					</td>
+				</tr>
+				
+				
+				
 				<tr>
 					<td>
 						<label for="Email">Email</label>
@@ -80,4 +110,8 @@
 		</form>
 		</div>
 	</body>	
+	
+	<div id= "footer">
+		2016 Live Tutoring
+	</div>
 </html>

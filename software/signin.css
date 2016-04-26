@@ -118,3 +118,13 @@ title {
     transition: all 200ms ease-in;
     transform: scale(1.05);
 }
+
+div#footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px;
+    position: fixed;
+    bottom: 0;
+}

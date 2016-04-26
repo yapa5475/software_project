@@ -61,6 +61,14 @@
 				</tr>
 				<tr>
 					<td>
+						<label for="Major">Major</label>
+					</td>
+					<td>
+						<input type="text" name="Major" maxlength="50" size="20">
+					</td>
+				</tr>
+				<tr>
+					<td>
 						<label for="Email">Email</label>
 					</td>
 					<td>

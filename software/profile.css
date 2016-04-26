@@ -22,7 +22,10 @@ h1 {
 
 h2 {
 	color: gray;
+	font-size: 50px;
 }
+
+
 
 ul {
 	list-style-type: none;
@@ -33,7 +36,7 @@ ul {
 }
 
 a {
-	color: white;
+	color: black;
 }
 
 li a {
@@ -61,4 +64,14 @@ li a:hover {
 .active2 {
 	background-color: purple;
 	color: white;
+}
+
+div#footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px;
+    position: absolute;
+    bottom: 0;
 }
