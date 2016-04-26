@@ -16,3 +16,9 @@ Our vision at LiveTutoring is to help students with last minute exam and homewor
 This is where LiveTutoring comes in. LiveTutoring is dedicated to help students find quick help when time is short or they are struggling to get a handle on a concept. By creating an acco
 
 
+
+----
+
+trello's link = https://trello.com/b/3EsUVksl
+
+
